@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Training Management System'),
+    'name' => env('APP_NAME', 'Training Curriculum Library'),
 
     /*
     |--------------------------------------------------------------------------

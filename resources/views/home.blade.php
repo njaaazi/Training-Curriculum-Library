@@ -43,9 +43,9 @@
                               <td>{{$trajnim->pershkrimi}}</td>
                               <td>
                                 @if($trajnim->akredituar == 1)
-                                    PO
+                                    YES
                                 @else
-                                    JO
+                                    NO
                                 @endif
                               </td>
                               <td>
@@ -122,25 +122,25 @@
                 {{ csrf_field() }}
 
                 <div class="form-group">
-                    <label for="titulli">Titulli</label>
+                    <label for="titulli">Title</label>
                     <input type="text" class="form-control" id="titulli" name="titulli"  required>
                 </div>
 
                 <div class="form-group">
-                    <label for="pershkrimi">Pershkrimi</label>
+                    <label for="pershkrimi">Description</label>
                     <textarea type="text" class="form-control" id="pershkrimi" name="pershkrimi"  required>
                 </textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="akredituar">Akredituar</label>
+                    <label for="akredituar">Accredited</label>
                     <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio1" value="true" name="akredituar" class="custom-control-input" required>
-                    <label class="custom-control-label" for="customRadio1">PO</label>
+                    <label class="custom-control-label" for="customRadio1">YES</label>
                     </div>
                     <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio2" value="false" name="akredituar" class="custom-control-input" required>
-                    <label class="custom-control-label" for="customRadio2">JO</label>
+                    <label class="custom-control-label" for="customRadio2">NO</label>
                     </div>
                 </div>
 

@@ -20,9 +20,9 @@
                             <td>{{ $trajnim->pershkrimi }}</td>
                             <td>
                                 @if($trajnim->akredituar == 1)
-                                    PO
+                                    YES
                                 @else
-                                    JO
+                                    NO
                                 @endif
 
                             </td>
